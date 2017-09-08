@@ -5,21 +5,20 @@
 <title>The Coding Ground Numbers</title>
 
 <script>
-function thisIsGreat(value){
-	value = [200];
-	numbers = [];
-	for (var i = 0; i < value; i++){
-		numbers = [value - i];
-		if(numbers % 3){
-			numbers = "coding";
-		}else if(numbers % 5){
-			numbers = "ground";	
-		}else if(numbers % 3 && numbers % 5){
-			numbers = "coding ground";
-		}else if(numbers !& 3){
-			numbers = numbers;	
+function distinguishMultiples(value){
+	value = [20];
+	var answer = "";
+	for (var i = 1; i < value; i++){
+		if(i % 3 === 0 && i % 5 === 0){
+		answer= "CodingGround";
+		}else if(i % 3 === 0){
+			answer ="Coding";	
+		}else if(i % 5 === 0){
+			answer = "Ground";
+		}else{
+			answer = i;
 		}
-		console.log(numbers);	
+		console.log(answer);	
 	}
 }
 </script>		 
