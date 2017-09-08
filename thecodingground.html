@@ -1,0 +1,32 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Coding Ground</title>
+
+<script>
+function thisIsGreat(value){
+	value = [200];
+	numbers = [];
+	for (var i = 0; i < value; i++){
+		numbers = [value - i];
+		if(numbers % 3){
+			numbers = "coding";
+		}else if(numbers % 5){
+			numbers = "ground";	
+		}else if(numbers % 3 && numbers % 5){
+			numbers = "coding ground";
+		}else if(numbers !& 3){
+			numbers = numbers;	
+		}
+		console.log(numbers);	
+	}
+}
+</script>		 
+</head>
+<body onload="thisIsGreat()">
+<p id="yesWeCan">
+
+</body>
+</html>
+
